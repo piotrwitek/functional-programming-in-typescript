@@ -2,6 +2,10 @@
 # yarn lockfile v1
 
 
+"@types/ramda@0.25.16":
+  version "0.25.16"
+  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.25.16.tgz#1d4eeb78d3247d1ceef971b458dd8469646cd1b4"
+
 immupdate@1.1.6:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/immupdate/-/immupdate-1.1.6.tgz#34c622c21f86591f62c4b782ddc022be4406a521"
@@ -11,6 +15,10 @@ ix@2.3.4:
   resolved "https://registry.yarnpkg.com/ix/-/ix-2.3.4.tgz#36cf30dd93ef5a3b3c64434ad7cacc05a7852386"
   dependencies:
     tslib "^1.8.0"
+
+ramda@0.25.0:
+  version "0.25.0"
+  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.25.0.tgz#8fdf68231cffa90bc2f9460390a0cb74a29b29a9"
 
 space-lift@0.6.4:
   version "0.6.4"
