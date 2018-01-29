@@ -1,10 +1,27 @@
-const fn = ([x, y, ...xs]) =>
-  (y == null && !xs.length)
-    ? x
-    : (x === y)
-      ? fn([x, ...xs])
-      : [x, ...fn([y, ...xs])];
+function compress<T>(xs: T[]): T[] {
+  const [x1, x2, ...tail] = xs;
+  return (xs.length <= 1) && xs
+    || (x1 === x2) && compress([x1, ...tail])
+    || [x1, ...compress([x2, ...tail])];
+}
 
 console.log(
-  fn([1, 1, 2, 3, 4, 4, 4]) //output: [1, 2, 3]
+  compress([]), //output: []
+  compress([1]), //output: [1]
+  compress([1, 1]), //output: [1]
+  compress([1, 1, 2]), //output: [1, 2]
+  compress([1, 1, 2, 3, 4, 4, 4]), //output: [1, 2, 3, 4]
+)
+
+function reverse<T>(xs: T[]): T[] {
+  const [head, ...tail] = xs;
+  return (xs.length === 0) && xs
+    || [...reverse(tail), head];
+}
+
+console.log(
+  reverse([]), // [];
+  reverse([1]), // [1];
+  reverse([1, 2]), // [2 ,1];
+  reverse([1, 2, 3, 4]), // [4 ,3 ,2 ,1];
 )
