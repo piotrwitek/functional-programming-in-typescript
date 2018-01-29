@@ -1,4 +1,6 @@
-let x, y, z;
-console.log(
-  ([x = 3, y, ...z] = [null, 3, 3], [z, x])
-)
+namespace Destructuring {
+  let x, y, z;
+  console.log(
+    ([x = 3, y, ...z] = [null, 3, 3], [z, x])
+  )
+}

@@ -7,8 +7,9 @@
     "typescript": "2.6.2"
   },
   "dependencies": {
+    "@types/node": "9.4.0",
     "@types/ramda": "0.25.16",
-    "ix": "2.3.4",
+    "fp-ts": "0.6.8",
     "ramda": "0.25.0",
     "space-lift": "0.6.4",
     "tslib": "1.9.0"

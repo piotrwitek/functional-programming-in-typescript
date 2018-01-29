@@ -1,9 +1,8 @@
-import { flip, curry, map, compose, chain } from 'ramda';
-import { Option, Result } from 'space-lift';
-
+import { map, compose } from 'ramda';
+// import { Option, Result } from 'space-lift';
 
 const process = compose(
-  map(a => a * 2)
+  map((a: number) => a * 2)
 )
 
 console.log(

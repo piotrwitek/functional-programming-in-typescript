@@ -2,19 +2,21 @@
 # yarn lockfile v1
 
 
+"@types/node@9.4.0":
+  version "9.4.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-9.4.0.tgz#b85a0bcf1e1cc84eb4901b7e96966aedc6f078d1"
+
 "@types/ramda@0.25.16":
   version "0.25.16"
   resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.25.16.tgz#1d4eeb78d3247d1ceef971b458dd8469646cd1b4"
 
+fp-ts@0.6.8:
+  version "0.6.8"
+  resolved "https://registry.yarnpkg.com/fp-ts/-/fp-ts-0.6.8.tgz#3b4ac3251f3565b2aefceffd787eb06c30c04b52"
+
 immupdate@1.1.6:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/immupdate/-/immupdate-1.1.6.tgz#34c622c21f86591f62c4b782ddc022be4406a521"
-
-ix@2.3.4:
-  version "2.3.4"
-  resolved "https://registry.yarnpkg.com/ix/-/ix-2.3.4.tgz#36cf30dd93ef5a3b3c64434ad7cacc05a7852386"
-  dependencies:
-    tslib "^1.8.0"
 
 ramda@0.25.0:
   version "0.25.0"
@@ -26,7 +28,7 @@ space-lift@0.6.4:
   dependencies:
     immupdate "1.1.6"
 
-tslib@1.9.0, tslib@^1.8.0:
+tslib@1.9.0:
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.9.0.tgz#e37a86fda8cbbaf23a057f473c9f4dc64e5fc2e8"
 
